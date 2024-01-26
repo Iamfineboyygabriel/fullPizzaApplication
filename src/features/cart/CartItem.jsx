@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import { formatCurrency } from '../../utils/helpers';
+import PropTypes from "prop-types";
+import { formatCurrency } from "../../utils/helpers";
 
 function CartItem({ item }) {
   const { pizzaId, name, quantity, totalPrice } = item;
