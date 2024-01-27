@@ -14,7 +14,9 @@ function Error() {
       <h1>Something went wrong 😢</h1>
       <p>{error.data || error.message}</p>
 
-      <LinkButton to='-1'li>&larr; Go back</LinkButton>
+      <LinkButton to="-1" li>
+        &larr; Go back
+      </LinkButton>
     </div>
   );
 }
