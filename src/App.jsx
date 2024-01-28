@@ -8,6 +8,7 @@ import CreateOrder, {
 import Order, { loader as orderLoader } from './features/order/Order';
 import AppLayout from './ui/AppLayout';
 import Error from './ui/Error';
+import { action as updateOrderAction } from './features/order/UpdateOrder';
 
 //what we did with the element and children is that we wrap the whole component inside the applayout
 
@@ -22,8 +23,6 @@ import Error from './ui/Error';
  */
 
 const router = createBrowserRouter([
-  
-
   {
     element: <AppLayout />,
     errorElement: <Error />,
@@ -47,6 +46,7 @@ const router = createBrowserRouter([
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
+        action: updateOrderAction,
       },
     ],
   },
